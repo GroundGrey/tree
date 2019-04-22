@@ -1,0 +1,250 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+  padding:0px;
+}
+body{
+  background:linear-gradient(to bottom,#FFBB66 10% ,#99FF99 80%);
+    height:650px;
+}
+.tree{ 
+  border-left: 10px solid red;
+  border-right: 10px solid yellow;
+  border-bottom: 150px solid green;
+  position: absolute;
+  bottom: 0px;
+  left: 500px;
+  z-index:5;
+  animation: grow1 10s infinite;
+  animation-direction:normal;
+  transition-timing-function:ease-in-out;
+}
+
+@keyframes grow1{
+  0%   {
+      border-left: 10px solid transparent; 
+      border-right: 10px solid transparent; 
+      border-bottom: 0px solid green; }
+    50% {
+      border-left: 3px solid lightgreen; 
+      border-right: 3px solid lightgreen; 
+      border-bottom: 200px solid green; }
+    100%   {
+      border-left: 10px solid transparent; 
+      border-right: 10px solid transparent; 
+      border-bottom: 200px solid black; }
+}
+
+.leave{
+  position:absolute;
+  bottom:100px;
+  left:485px;
+  width:0px;
+  height:0px;
+  background:transparent;
+  z-index:4;
+  animation: grow2 10s infinite;
+  animation-direction:normal;
+  transition-timing-function:ease-in-out;
+}
+
+@keyframes grow2{
+  0%   {
+    bottom:100px;
+    left:500px;
+    width:0px;
+    height:0px;
+    background:transparent;
+  }
+    50% {
+    bottom:100px;
+    left:501px;
+    width:1px;
+    height:40px;
+    background:#00DD00;
+  }
+  75%{
+    bottom:100px;
+    left:485px;
+    width:50px;
+    height:150px;
+    background:#00DD00;
+    
+  }
+  85%{
+    bottom:100px;
+    left:485px;
+    width:50px;
+    height:150px;
+    background:pink;
+  }
+    100%   {
+      bottom:100px;
+      left:485px;
+      width:50px;
+      height:150px;
+      background:orange;
+  }
+}
+.branch1{
+  
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 100px solid brown;
+  transform:rotate(12deg);
+  position: absolute;
+  bottom: 100px;
+  left: 514px;
+  z-index:4;
+  animation: grow3 10s infinite;
+  animation-direction:normal;
+  transition-timing-function:ease-in-out;
+}
+
+@keyframes grow3{
+  0%   {
+      border-left: 0px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 0px solid transparent;
+      bottom:100px;
+      left:514px;
+  }
+    50% {
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-bottom: 0px solid transparent;
+      bottom:100px;
+      left:500px;
+  }
+  75%{
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 50px solid brown;
+      bottom:100px;
+      left:512px;
+    
+  }
+  85%{
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 88px solid brown;
+      bottom:100px;
+      left:514px;
+  }
+    100%   {
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 100px solid brown;
+      bottom:100px;
+      left:514px;
+  }
+}
+
+.branch2{
+  
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 100px solid darkred;
+  transform:rotate(-12deg);
+  position: absolute;
+  bottom: 50px;
+  left: 491px;
+  z-index:3;
+  animation: grow4 10s infinite;
+  animation-direction:normal;
+  transition-timing-function:ease-in-out;
+}
+
+@keyframes grow4{
+  0%   {
+      border-left: 0px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 100px solid transparent;
+  bottom: 50px;
+  left: 491px;
+  }
+    50% {
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-bottom: 100px solid transparent;
+  bottom: 50px;
+  left: 491px;
+  }
+  75%{
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 100px solid transparent;
+  bottom: 50px;
+  left: 491px;
+    
+  }
+  85%{
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 100px solid darkred;
+  bottom: 50px;
+  left: 491px;
+  }
+    100%   {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 100px solid darkred;
+  bottom: 50px;
+  left: 491px;
+  }
+}
+
+
+.branch3{
+  
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 80px solid darkred;
+  transform:rotate(25deg);
+  position: absolute;
+  bottom: 20px;
+  left: 525px;
+  z-index:3;
+  animation: grow5 10s infinite;
+  animation-direction:normal;
+  transition-timing-function:ease-in-out;
+}
+
+@keyframes grow5{
+  0%   {
+      border-left: 0px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 60px solid transparent;
+  bottom: 20px;
+  left: 525px;
+  }
+    50% {
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-bottom: 60px solid transparent;
+  bottom: 20px;
+  left: 525px;
+  }
+  75%{
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-bottom: 60px solid transparent;
+  bottom: 20px;
+  left: 525px;
+    
+  }
+  85%{
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-bottom: 80px solid transparent;
+  bottom: 20px;
+  left: 525px;
+  }
+    100%   {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 80px solid darkred;
+  bottom: 20px;
+  left: 525px;
+  }
+}
